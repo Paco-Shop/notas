@@ -1,26 +1,209 @@
 @import "tailwindcss";
 
+/* =========================================
+   MODO CLARO
+========================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+
+  /* Fondos */
+  --color-fondo: #f4fafd;
+  --color-superficie: #eaf5fa;
+  --color-superficie-secundaria: #dceef5;
+  --color-superficie-elevada: #ffffff;
+  --color-superficie-invertida: #12344d;
+
+  /* Textos */
+  --color-texto: #12344d;
+  --color-texto-secundario: #34566c;
+  --color-texto-terciario: #58788b;
+  --color-texto-invertido: #ffffff;
+  --color-placeholder: #7895a5;
+
+  /* Marca */
+  --color-primario: #087fad;
+  --color-primario-hover: #066b91;
+  --color-primario-activo: #075675;
+  --color-primario-suave: #ddf2fa;
+
+  --color-secundario: #12344d;
+  --color-secundario-hover: #1d4b66;
+
+  /* Acentos */
+  --color-acento: #08a6c7;
+  --color-enlace: #0876a5;
+  --color-enlace-hover: #075675;
+
+  /* Estados */
+  --color-exito: #16856b;
+  --color-exito-suave: #ddf4eb;
+
+  --color-aviso: #a96816;
+  --color-aviso-suave: #fff1d6;
+
+  --color-error: #c43d50;
+  --color-error-suave: #fce7ea;
+
+  --color-informacion: #087fad;
+  --color-informacion-suave: #ddf2fa;
+
+  /* Bordes */
+  --color-borde: #d5e7ef;
+  --color-borde-secundario: #b7d3e0;
+  --color-borde-enfocado: #087fad;
+
+  /* Formularios */
+  --color-entrada: #ffffff;
+  --color-entrada-hover: #f0f8fc;
+  --color-entrada-desactivada: #e5eff4;
+
+  /* Estados de interfaz */
+  --color-desactivado: #b8cdd7;
+  --color-superpuesto: rgb(18 52 77 / 45%);
+  --color-seleccion: #b8e3f2;
+
+  /* Sombras */
+  --color-sombra: rgb(18 52 77 / 12%);
 }
+
+/* =========================================
+   MODO OSCURO
+========================================= */
+
+.dark {
+  color-scheme: dark;
+
+  /* Fondos */
+  --color-fondo: #020617;
+  --color-superficie: #0f172a;
+  --color-superficie-secundaria: #1e293b;
+  --color-superficie-elevada: #1e293b;
+  --color-superficie-invertida: #f8fafc;
+
+  /* Textos */
+  --color-texto: #f8fafc;
+  --color-texto-secundario: #cbd5e1;
+  --color-texto-terciario: #94a3b8;
+  --color-texto-invertido: #0f172a;
+  --color-placeholder: #64748b;
+
+  /* Marca */
+  --color-primario: #818cf8;
+  --color-primario-hover: #a5b4fc;
+  --color-primario-activo: #6366f1;
+  --color-primario-suave: #312e81;
+
+  --color-secundario: #e2e8f0;
+  --color-secundario-hover: #cbd5e1;
+
+  /* Acentos */
+  --color-acento: #22d3ee;
+  --color-enlace: #a5b4fc;
+  --color-enlace-hover: #c7d2fe;
+
+  /* Estados */
+  --color-exito: #4ade80;
+  --color-exito-suave: #14532d;
+
+  --color-aviso: #fbbf24;
+  --color-aviso-suave: #78350f;
+
+  --color-error: #f87171;
+  --color-error-suave: #7f1d1d;
+
+  --color-informacion: #38bdf8;
+  --color-informacion-suave: #0c4a6e;
+
+  /* Bordes */
+  --color-borde: #334155;
+  --color-borde-secundario: #475569;
+  --color-borde-enfocado: #818cf8;
+
+  /* Formularios */
+  --color-entrada: #0f172a;
+  --color-entrada-hover: #1e293b;
+  --color-entrada-desactivada: #1e293b;
+
+  /* Estados de interfaz */
+  --color-desactivado: #475569;
+  --color-superpuesto: rgb(0 0 0 / 60%);
+  --color-seleccion: #3730a3;
+
+  /* Sombras */
+  --color-sombra: rgb(0 0 0 / 30%);
+}
+
+/* =========================================
+   INTEGRACIÓN CON TAILWIND CSS 4
+========================================= */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fondos */
+  --color-fondo: var(--color-fondo);
+  --color-superficie: var(--color-superficie);
+  --color-superficie-secundaria: var(--color-superficie-secundaria);
+  --color-superficie-elevada: var(--color-superficie-elevada);
+  --color-superficie-invertida: var(--color-superficie-invertida);
+
+  /* Textos */
+  --color-texto: var(--color-texto);
+  --color-texto-secundario: var(--color-texto-secundario);
+  --color-texto-terciario: var(--color-texto-terciario);
+  --color-texto-invertido: var(--color-texto-invertido);
+  --color-placeholder: var(--color-placeholder);
+
+  /* Marca */
+  --color-primario: var(--color-primario);
+  --color-primario-hover: var(--color-primario-hover);
+  --color-primario-activo: var(--color-primario-activo);
+  --color-primario-suave: var(--color-primario-suave);
+  --color-secundario: var(--color-secundario);
+  --color-secundario-hover: var(--color-secundario-hover);
+
+  /* Acentos */
+  --color-acento: var(--color-acento);
+  --color-enlace: var(--color-enlace);
+  --color-enlace-hover: var(--color-enlace-hover);
+
+  /* Estados */
+  --color-exito: var(--color-exito);
+  --color-exito-suave: var(--color-exito-suave);
+  --color-aviso: var(--color-aviso);
+  --color-aviso-suave: var(--color-aviso-suave);
+  --color-error: var(--color-error);
+  --color-error-suave: var(--color-error-suave);
+  --color-informacion: var(--color-informacion);
+  --color-informacion-suave: var(--color-informacion-suave);
+
+  /* Bordes */
+  --color-borde: var(--color-borde);
+  --color-borde-secundario: var(--color-borde-secundario);
+  --color-borde-enfocado: var(--color-borde-enfocado);
+
+  /* Formularios */
+  --color-entrada: var(--color-entrada);
+  --color-entrada-hover: var(--color-entrada-hover);
+  --color-entrada-desactivada: var(--color-entrada-desactivada);
+
+  /* Interfaz */
+  --color-desactivado: var(--color-desactivado);
+  --color-superpuesto: var(--color-superpuesto);
+  --color-seleccion: var(--color-seleccion);
+  --color-sombra: var(--color-sombra);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =========================================
+   ESTILOS BASE
+========================================= */
+
+@layer base {
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  ::selection {
+    background-color: var(--color-seleccion);
+  }
 }
